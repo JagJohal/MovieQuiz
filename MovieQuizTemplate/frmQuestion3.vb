@@ -14,7 +14,7 @@
         ProgressBarQ3.Value = 0
         btnAnswer1.Checked = False
         btnAnswer2.Checked = False
-        btnAnswer3.Checked = False
+        btnAmswer3.Checked = False
         btnAnswer4.Checked = False
 
     End Sub
