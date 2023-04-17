@@ -22,18 +22,21 @@ Partial Class frmQuestion3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.btnAmswer3 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
         Me.btnNext = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ProgressBarQ3 = New System.Windows.Forms.ProgressBar()
+        Me.tmrQuestion3 = New System.Windows.Forms.Timer(Me.components)
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -45,24 +48,6 @@ Partial Class frmQuestion3
         Me.Label1.Size = New System.Drawing.Size(310, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Dorothy call the lion?"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.lion
-        Me.PictureBox2.Location = New System.Drawing.Point(524, 128)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(185, 187)
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.dorothy
-        Me.PictureBox1.Location = New System.Drawing.Point(57, 128)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(179, 179)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'GroupBox1
         '
@@ -135,11 +120,40 @@ Partial Class frmQuestion3
         Me.btnNext.Text = "Next"
         Me.btnNext.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.lion
+        Me.PictureBox2.Location = New System.Drawing.Point(524, 128)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(185, 187)
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.dorothy
+        Me.PictureBox1.Location = New System.Drawing.Point(57, 128)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(179, 179)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'ProgressBarQ3
+        '
+        Me.ProgressBarQ3.Location = New System.Drawing.Point(94, 358)
+        Me.ProgressBarQ3.Name = "ProgressBarQ3"
+        Me.ProgressBarQ3.Size = New System.Drawing.Size(429, 72)
+        Me.ProgressBarQ3.TabIndex = 5
+        '
+        'tmrQuestion3
+        '
+        '
         'frmQuestion3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ProgressBarQ3)
         Me.Controls.Add(Me.btnNext)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox2)
@@ -147,10 +161,10 @@ Partial Class frmQuestion3
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmQuestion3"
         Me.Text = "frmQuestion3"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -165,4 +179,6 @@ Partial Class frmQuestion3
     Friend WithEvents btnAnswer2 As RadioButton
     Friend WithEvents btnAnswer1 As RadioButton
     Friend WithEvents btnNext As Button
+    Friend WithEvents ProgressBarQ3 As ProgressBar
+    Friend WithEvents tmrQuestion3 As Timer
 End Class
