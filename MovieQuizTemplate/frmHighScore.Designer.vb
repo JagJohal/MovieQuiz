@@ -24,8 +24,8 @@ Partial Class frmHighScore
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.listbox1 = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnAgain = New System.Windows.Forms.Button()
+        Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,33 +46,33 @@ Partial Class frmHighScore
         Me.listbox1.Size = New System.Drawing.Size(411, 186)
         Me.listbox1.TabIndex = 1
         '
-        'Button1
+        'btnAgain
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(518, 307)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(257, 64)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "AGAIN"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnAgain.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAgain.Location = New System.Drawing.Point(518, 307)
+        Me.btnAgain.Name = "btnAgain"
+        Me.btnAgain.Size = New System.Drawing.Size(257, 64)
+        Me.btnAgain.TabIndex = 2
+        Me.btnAgain.Text = "AGAIN"
+        Me.btnAgain.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnQuit
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(518, 377)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(256, 61)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "QUIT"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnQuit.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Location = New System.Drawing.Point(518, 377)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(256, 61)
+        Me.btnQuit.TabIndex = 3
+        Me.btnQuit.Text = "QUIT"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
         'frmHighScore
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnQuit)
+        Me.Controls.Add(Me.btnAgain)
         Me.Controls.Add(Me.listbox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmHighScore"
@@ -84,6 +84,6 @@ Partial Class frmHighScore
 
     Friend WithEvents Label1 As Label
     Friend WithEvents listbox1 As ListBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnAgain As Button
+    Friend WithEvents btnQuit As Button
 End Class
