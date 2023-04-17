@@ -1,4 +1,4 @@
-﻿Public Class frmQuestion7
+﻿Public Class frmQuestion3
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
@@ -13,7 +13,7 @@
         End If
 
         frmHighScore.Show()
-        frmHighScore.doscore()
+        frmHighScore.doScore()
 
         Me.Hide()
     End Sub

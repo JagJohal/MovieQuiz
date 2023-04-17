@@ -20,7 +20,7 @@
             playerScore = playerScore + 1
         End If
 
-        frmQuestion2.Show()
+        frmQuestion3.Show()
 
         Me.Hide()
     End Sub

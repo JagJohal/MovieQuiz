@@ -92,8 +92,24 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuestion2.vb" />
-    <Compile Include="frmQuestion7.vb" />
+    <Compile Include="frmQuestion1.designer.vb">
+      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestion2.designer.vb">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestion3.designer.vb">
+      <DependentUpon>frmQuestion3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion3.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQuestion4.Designer.vb">
       <DependentUpon>frmQuestion4.vb</DependentUpon>
     </Compile>
@@ -142,6 +158,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion1.resx">
+      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion2.resx">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion3.resx">
+      <DependentUpon>frmQuestion3.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuestion4.resx">
       <DependentUpon>frmQuestion4.vb</DependentUpon>
