@@ -29,9 +29,9 @@ Partial Class frmMain
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txtPlayerName = New System.Windows.Forms.TextBox()
+        Me.btnQuit = New System.Windows.Forms.Button()
+        Me.btnStart = New System.Windows.Forms.Button()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -105,41 +105,41 @@ Partial Class frmMain
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Player Name:"
         '
-        'TextBox1
+        'txtPlayerName
         '
-        Me.TextBox1.Location = New System.Drawing.Point(166, 411)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(310, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txtPlayerName.Location = New System.Drawing.Point(166, 411)
+        Me.txtPlayerName.Name = "txtPlayerName"
+        Me.txtPlayerName.Size = New System.Drawing.Size(310, 20)
+        Me.txtPlayerName.TabIndex = 7
         '
-        'Button1
+        'btnQuit
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(502, 393)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(122, 55)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "QUIT"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnQuit.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnQuit.Location = New System.Drawing.Point(502, 393)
+        Me.btnQuit.Name = "btnQuit"
+        Me.btnQuit.Size = New System.Drawing.Size(122, 55)
+        Me.btnQuit.TabIndex = 8
+        Me.btnQuit.Text = "QUIT"
+        Me.btnQuit.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnStart
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(642, 393)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(124, 55)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "START"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStart.Location = New System.Drawing.Point(642, 393)
+        Me.btnStart.Name = "btnStart"
+        Me.btnStart.Size = New System.Drawing.Size(124, 55)
+        Me.btnStart.TabIndex = 9
+        Me.btnStart.Text = "START"
+        Me.btnStart.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.btnStart)
+        Me.Controls.Add(Me.btnQuit)
+        Me.Controls.Add(Me.txtPlayerName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
@@ -166,7 +166,7 @@ Partial Class frmMain
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txtPlayerName As TextBox
+    Friend WithEvents btnQuit As Button
+    Friend WithEvents btnStart As Button
 End Class
