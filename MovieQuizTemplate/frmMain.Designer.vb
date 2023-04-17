@@ -24,7 +24,7 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtPlayerName = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
@@ -60,12 +60,12 @@ Partial Class frmMain
         Me.Label2.TabIndex = 6
         Me.Label2.Text = "Player Name:"
         '
-        'txtPlayerName
+        'txtName
         '
-        Me.txtPlayerName.Location = New System.Drawing.Point(166, 411)
-        Me.txtPlayerName.Name = "txtPlayerName"
-        Me.txtPlayerName.Size = New System.Drawing.Size(310, 20)
-        Me.txtPlayerName.TabIndex = 7
+        Me.txtName.Location = New System.Drawing.Point(166, 411)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(310, 20)
+        Me.txtName.TabIndex = 7
         '
         'btnQuit
         '
@@ -139,7 +139,7 @@ Partial Class frmMain
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnStart)
         Me.Controls.Add(Me.btnQuit)
-        Me.Controls.Add(Me.txtPlayerName)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
@@ -166,7 +166,7 @@ Partial Class frmMain
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtPlayerName As TextBox
+    Friend WithEvents txtName As TextBox
     Friend WithEvents btnQuit As Button
     Friend WithEvents btnStart As Button
 End Class

@@ -9,7 +9,22 @@
 
     Private Sub btnStart_Click(sender As Object, e As EventArgs) Handles btnStart.Click
         playerScore = 0
-        playerName = txtPlayerName.Text
+        If (txtName.Text = "") Then
+            MsgBox("Please Enter Your name")
+        Else
+            'save the player name to the global variable
+            playerName = txtName.Text
+            'show the first question form
+            frmQuestion1.Show()
+            'use the local sub procedure to intialise the form
+            frmQuestion1.InitializeLifetimeService()
+            'set the player name to Blank for game restart
+            txtName.Text = ""
+            'hide this ofrm
+            Me.Hide()
+
+        End If
+        playerName = txtName.Text
         frmQuestion1.Show()
         Me.Hide()
 
