@@ -18,16 +18,7 @@
 
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tmrQuestion1.Tick
-        progressCount = progressCount + 1
-        If (progressCount = 10) Then
-            tmrQuestion1.Enabled = False
-            MsgBox("Too Slow Try Again")
-            frmQuestion2.Show()
-            frmQuestion2.InitializeLifetimeService()
-            Me.Hide()
-        End If
-    End Sub
+
     Public Sub init()
         progressCount = 0
         tmrQuestion1.Enabled = True
@@ -39,7 +30,16 @@
 
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs)
 
+
+    Private Sub tmrQuestion1_Tick(sender As Object, e As EventArgs) Handles tmrQuestion1.Tick
+        progressCount = progressCount + 1
+        If (progressCount = 10) Then
+            tmrQuestion1.Enabled = False
+            MsgBox("Too Slow Try Again")
+            frmQuestion2.Show()
+            frmQuestion2.InitializeLifetimeService()
+            Me.Hide()
+        End If
     End Sub
 End Class

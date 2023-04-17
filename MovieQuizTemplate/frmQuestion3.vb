@@ -20,8 +20,8 @@
     End Sub
 
     Private Sub tmrQuestion3_Tick(sender As Object, e As EventArgs) Handles tmrQuestion3.Tick
-        progressCount = +=1
-            ProgressBarQ3.PerformStep()
+        progressCount += 1
+        ProgressBarQ3.PerformStep()
 
         If (progressCount = 10) Then
             tmrQuestion3.Enabled = False

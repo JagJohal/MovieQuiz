@@ -23,7 +23,6 @@ Partial Class frmQuestion1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Timer1 As System.Windows.Forms.Timer
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
