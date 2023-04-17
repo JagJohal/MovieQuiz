@@ -92,10 +92,10 @@
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuestion1.Designer.vb">
-      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    <Compile Include="frmQuestion4.Designer.vb">
+      <DependentUpon>frmQuestion4.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmQuestion1.vb">
+    <Compile Include="frmQuestion4.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmQuestion2.Designer.vb">
@@ -135,8 +135,8 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuestion1.resx">
-      <DependentUpon>frmQuestion1.vb</DependentUpon>
+    <EmbeddedResource Include="frmQuestion4.resx">
+      <DependentUpon>frmQuestion4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmQuestion2.resx">
       <DependentUpon>frmQuestion2.vb</DependentUpon>

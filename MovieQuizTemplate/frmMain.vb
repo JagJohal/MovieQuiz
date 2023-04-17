@@ -15,9 +15,9 @@
             'save the player name to the global variable
             playerName = txtName.Text
             'show the first question form
-            frmQuestion1.Show()
+            frmQuestion4.Show()
             'use the local sub procedure to intialise the form
-            frmQuestion1.init()
+            frmQuestion4.init()
             'set the player name to Blank for game restart
             txtName.Text = ""
             'hide this ofrm
@@ -25,7 +25,7 @@
 
         End If
         playerName = txtName.Text
-        frmQuestion1.Show()
+        frmQuestion4.Show()
         Me.Hide()
 
     End Sub
