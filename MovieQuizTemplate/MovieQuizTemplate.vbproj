@@ -134,6 +134,9 @@
     <EmbeddedResource Include="frmQuestion1.resx">
       <DependentUpon>frmQuestion1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion2.resx">
+      <DependentUpon>frmQuestion2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -173,6 +176,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\hep2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dar2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
