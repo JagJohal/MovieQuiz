@@ -83,6 +83,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property dorothy() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("dorothy", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property hep1() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("hep1", resourceCulture)
@@ -96,6 +106,16 @@ Namespace My.Resources
         Friend ReadOnly Property hep2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("hep2", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property lion() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("lion", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
