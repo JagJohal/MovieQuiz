@@ -23,7 +23,7 @@ Partial Class frmHighScore
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.listbox1 = New System.Windows.Forms.ListBox()
+        Me.lstHighScore = New System.Windows.Forms.ListBox()
         Me.btnAgain = New System.Windows.Forms.Button()
         Me.btnQuit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -38,13 +38,13 @@ Partial Class frmHighScore
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Congratulations Your Score Will Be Added To The Hall Of Fame"
         '
-        'listbox1
+        'lstHighScore
         '
-        Me.listbox1.FormattingEnabled = True
-        Me.listbox1.Location = New System.Drawing.Point(192, 96)
-        Me.listbox1.Name = "listbox1"
-        Me.listbox1.Size = New System.Drawing.Size(411, 186)
-        Me.listbox1.TabIndex = 1
+        Me.lstHighScore.FormattingEnabled = True
+        Me.lstHighScore.Location = New System.Drawing.Point(192, 96)
+        Me.lstHighScore.Name = "lstHighScore"
+        Me.lstHighScore.Size = New System.Drawing.Size(411, 186)
+        Me.lstHighScore.TabIndex = 1
         '
         'btnAgain
         '
@@ -73,7 +73,7 @@ Partial Class frmHighScore
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnAgain)
-        Me.Controls.Add(Me.listbox1)
+        Me.Controls.Add(Me.lstHighScore)
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmHighScore"
         Me.Text = "frmHighScore"
@@ -83,7 +83,7 @@ Partial Class frmHighScore
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents listbox1 As ListBox
+    Friend WithEvents lstHighScore As ListBox
     Friend WithEvents btnAgain As Button
     Friend WithEvents btnQuit As Button
 End Class
