@@ -1,12 +1,15 @@
 ﻿Public Class frmQuestion6
     Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+
+        tmrQuestion6.Enabled = False
+
         If (btnAnswer4.Checked) Then
             playerScore = playerScore + 1
         End If
         frmHighScore.Show()
         frmHighScore.doscore()
-
         Me.Hide()
+
     End Sub
     Public Sub init()
         progressCount = 0
