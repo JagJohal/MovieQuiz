@@ -38,6 +38,13 @@ Partial Class frmQuestion1
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer7 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer8 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer9 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer10 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer11 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer12 = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -149,6 +156,9 @@ Partial Class frmQuestion1
         Me.ProgressBarQ.Size = New System.Drawing.Size(464, 51)
         Me.ProgressBarQ.TabIndex = 5
         '
+        'Timer7
+        '
+        '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -186,4 +196,11 @@ Partial Class frmQuestion1
     Friend WithEvents Timer3 As Timer
     Friend WithEvents Timer4 As Timer
     Friend WithEvents Timer5 As Timer
+    Friend WithEvents Timer6 As Timer
+    Friend WithEvents Timer7 As Timer
+    Friend WithEvents Timer8 As Timer
+    Friend WithEvents Timer9 As Timer
+    Friend WithEvents Timer10 As Timer
+    Friend WithEvents Timer11 As Timer
+    Friend WithEvents Timer12 As Timer
 End Class

@@ -7,4 +7,12 @@
         frmQuestion2.Show()
         Me.Show()
     End Sub
+
+    Private Sub Timer7_Tick(sender As Object, e As EventArgs) Handles Timer7.Tick
+
+    End Sub
+
+    Private Sub frmQuestion1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
