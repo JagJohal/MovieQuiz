@@ -23,17 +23,17 @@ Partial Class frmQuestion1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.btnAnswer1 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer2 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer3 = New System.Windows.Forms.RadioButton()
         Me.btnAnswer4 = New System.Windows.Forms.RadioButton()
         Me.btnNext = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -45,24 +45,6 @@ Partial Class frmQuestion1
         Me.Label1.Size = New System.Drawing.Size(521, 33)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "In What Year Audrey Hepburn Born?"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.hep2
-        Me.PictureBox2.Location = New System.Drawing.Point(566, 123)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(186, 217)
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.hep1
-        Me.PictureBox1.Location = New System.Drawing.Point(59, 123)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(203, 212)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'GroupBox1
         '
@@ -135,6 +117,24 @@ Partial Class frmQuestion1
         Me.btnNext.Text = "NEXT"
         Me.btnNext.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.MovieQuizTemplate.My.Resources.Resources.hep2
+        Me.PictureBox2.Location = New System.Drawing.Point(566, 123)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(186, 217)
+        Me.PictureBox2.TabIndex = 2
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.MovieQuizTemplate.My.Resources.Resources.hep1
+        Me.PictureBox1.Location = New System.Drawing.Point(59, 123)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(203, 212)
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
         'frmQuestion1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -147,10 +147,10 @@ Partial Class frmQuestion1
         Me.Controls.Add(Me.Label1)
         Me.Name = "frmQuestion1"
         Me.Text = "frmQuestion1"
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
