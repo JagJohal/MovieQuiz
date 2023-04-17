@@ -8,7 +8,7 @@
             playerScore = playerScore + 1
         End If
         frmQuestion3.Show()
-        frmQuestion3.InitializeLifetimeService()
+        frmQuestion3.init()
         Me.Hide()
     End Sub
 
@@ -18,7 +18,7 @@
             tmrQuestion2.Enabled = False
             MsgBox("Too Slow Try Again")
             frmQuestion3.Show()
-            frmQuestion3.InitializeLifetimeService()
+            frmQuestion3.init()
             Me.Hide()
         End If
     End Sub

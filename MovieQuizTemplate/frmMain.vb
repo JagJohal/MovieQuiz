@@ -17,7 +17,7 @@
             'show the first question form
             frmQuestion1.Show()
             'use the local sub procedure to intialise the form
-            frmQuestion1.InitializeLifetimeService()
+            frmQuestion1.init()
             'set the player name to Blank for game restart
             txtName.Text = ""
             'hide this ofrm
